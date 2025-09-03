@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChotuGPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-wrapper">
+    <header>
+      <h1>🤖 ChotuGPT</h1>
+      <div class="header-buttons">
+        <button id="clear-chat">🗑️</button>
+        <button id="download-chat">⬇️</button>
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </header>
+
+    <main id="chat-box"></main>
+
+    <div id="typing-indicator" class="hidden">ChotuGPT is typing...</div>
+
+    <footer>
+      <textarea id="user-input" placeholder="Type your message..."></textarea>
+      <button onclick="sendMessage()">➤</button>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
